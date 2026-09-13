@@ -1,0 +1,52 @@
+{
+  "username": "patilpushpraj39-lang",
+  "name": "Pushpraj Patil",
+  "title": "Engineering Student & Developer",
+  "tagline": "Build the future.",
+  "location": "Talegaon, Pune",
+  "timezone": "Asia/Kolkata",
+  "email": "patilpushpraj39@gmail.com",
+  "bio": "I'm an engineering student and developer exploring the space between technology and design. I enjoy turning ideas into thoughtful digital experiences through web development, AI, and interactive design.",
+  "portfolio": "https://patilpushpraj39-lang.github.io/pushpraj-portfolio/",
+  "github": "https://github.com/patilpushpraj39-lang",
+  "linkedin": "https://www.linkedin.com/in/pushpraj-patil-aa7320328",
+  "instagram": "https://www.instagram.com/_the_pushpraj_patil__/",
+  "card_rows": [
+    ["Role", "Engineering Student & Developer"],
+    ["Based", "Talegaon, Pune"],
+    ["Focus", "Web development · AI"],
+    ["", "Interactive design"],
+    ["Code", "React · TypeScript · Python"],
+    ["", "Node.js · PostgreSQL · Supabase"],
+    ["UI", "Tailwind CSS · Framer Motion"],
+    ["", "Three.js · Figma"],
+    ["Tools", "Git & GitHub · Vite · VS Code"]
+  ],
+  "technology": ["React", "TypeScript", "Node.js", "Python", "PostgreSQL", "Supabase", "OpenAI API", "Prompt Engineering", "Data Processing", "ML Basics", "Tailwind CSS", "Framer Motion", "Three.js", "Figma", "Git & GitHub", "Vite", "VS Code", "Vercel"],
+  "projects": [
+    {
+      "name": "Cafe D' Cruze",
+      "description": "A modern café website designed to present the brand, menu and atmosphere through a clean and engaging web experience.",
+      "repository": "https://github.com/patilpushpraj39-lang/cafe-d-cruze-v2",
+      "live": "https://patilpushpraj39-lang.github.io/cafe-d-cruze-v2/"
+    },
+    {
+      "name": "S-Square Fitness",
+      "description": "A fitness-focused web experience designed around clear content, responsive layouts and an energetic visual identity.",
+      "repository": "https://github.com/patilpushpraj39-lang/s-square-fitness",
+      "live": "https://patilpushpraj39-lang.github.io/s-square-fitness/"
+    },
+    {
+      "name": "Medicare Reminder AI",
+      "description": "An AI-assisted medication reminder experience focused on making daily medication schedules easier to manage.",
+      "repository": "https://github.com/patilpushpraj39-lang/medicare-reminder-ai",
+      "live": "https://patilpushpraj39-lang.github.io/medicare-reminder-ai/"
+    },
+    {
+      "name": "Skyline Weather App",
+      "description": "A responsive weather application that presents current weather information through a simple, interactive interface.",
+      "repository": "https://github.com/patilpushpraj39-lang/Skyline-Weather-App",
+      "live": "https://patilpushpraj39-lang.github.io/Skyline-Weather-App/"
+    }
+  ]
+}

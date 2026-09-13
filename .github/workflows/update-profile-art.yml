@@ -1,0 +1,53 @@
+name: Update profile art
+
+"on":
+  schedule:
+    - cron: "17 6 * * *" # Approximately 11:47 AM India time; GitHub may delay it.
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - "tests/**"
+      - "profile.json"
+      - ".github/workflows/update-profile-art.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-art
+  cancel-in-progress: false
+
+jobs:
+  heatmap:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+          fetch-depth: 1
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Check calendar parsing
+        run: python -m unittest discover -s tests -v
+      - name: Fetch public contribution counts
+        run: python scripts/fetch_contributions.py
+      - name: Render graph and profile card
+        run: |
+          python scripts/render_heatmap_svg.py
+          python scripts/make_info_card.py
+          python scripts/make_readme.py
+      - name: Commit changed profile files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/contributions.json contrib-heatmap.svg info-card.svg README.md
+          if git diff --cached --quiet; then
+            echo "Profile is already up to date."
+          else
+            git commit -m "chore: refresh profile art [skip ci]"
+            git push origin HEAD:main
+          fi

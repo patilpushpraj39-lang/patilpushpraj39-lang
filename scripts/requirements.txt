@@ -1,0 +1,2 @@
+# Daily contribution fetch and rendering use the Python standard library only.
+# No dependencies, personal access token, or third-party stats service needed.

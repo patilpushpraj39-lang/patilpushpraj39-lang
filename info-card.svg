@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="490" height="442" viewBox="0 0 490 442" role="img" aria-labelledby="title desc">
+<title id="title">Pushpraj Patil</title><desc id="desc">I&#x27;m an engineering student and developer exploring the space between technology and design. I enjoy turning ideas into thoughtful digital experiences through web development, AI, and interactive design.</desc>
+<style>text{font-family:'DejaVu Sans Mono','Liberation Mono',Consolas,monospace}.appear{opacity:1}@keyframes reveal{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}@keyframes type{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}@media(prefers-reduced-motion:reduce){.appear,.ascii-row{animation:none!important;clip-path:none!important}}</style>
+<rect x="0.5" y="0.5" width="489" height="441" rx="14" fill="#0d1117" stroke="#30363d"/>
+<circle cx="22" cy="22" r="4" fill="#f78166"/>
+<circle cx="37" cy="22" r="4" fill="#d2ac7a"/>
+<circle cx="52" cy="22" r="4" fill="#7ee787"/>
+<text x="70" y="26" font-size="11" fill="#919ba8" >profile / neofetch</text>
+<path d="M1 44H489" stroke="#30363d"/>
+<g class="appear" style="animation:reveal .45s ease 0.15s both"><text x="25" y="88" font-size="26" fill="#e6edf3" >Pushpraj Patil</text></g>
+<g class="appear" style="animation:reveal .45s ease 0.25s both"><text x="25" y="113" font-size="13" fill="#7ee787" >patilpushpraj39-lang@github</text></g>
+<path d="M25 133H465" stroke="#30363d"/>
+<g class="appear" style="animation:reveal .45s ease 0.40s both"><text x="25" y="162" font-size="12" fill="#d2ac7a" >Role</text><text x="93" y="162" font-size="12.5" fill="#e6edf3" >Engineering Student &amp; Developer</text></g>
+<g class="appear" style="animation:reveal .45s ease 0.49s both"><text x="25" y="187" font-size="12" fill="#d2ac7a" >Based</text><text x="93" y="187" font-size="12.5" fill="#e6edf3" >Talegaon, Pune</text></g>
+<g class="appear" style="animation:reveal .45s ease 0.58s both"><text x="25" y="212" font-size="12" fill="#d2ac7a" >Focus</text><text x="93" y="212" font-size="12.5" fill="#e6edf3" >Web development · AI</text></g>
+<g class="appear" style="animation:reveal .45s ease 0.67s both"><text x="25" y="237" font-size="12" fill="#d2ac7a" ></text><text x="93" y="237" font-size="12.5" fill="#e6edf3" >Interactive design</text></g>
+<g class="appear" style="animation:reveal .45s ease 0.76s both"><text x="25" y="262" font-size="12" fill="#d2ac7a" >Code</text><text x="93" y="262" font-size="12.5" fill="#e6edf3" >React · TypeScript · Python</text></g>
+<g class="appear" style="animation:reveal .45s ease 0.85s both"><text x="25" y="287" font-size="12" fill="#d2ac7a" ></text><text x="93" y="287" font-size="12.5" fill="#e6edf3" >Node.js · PostgreSQL · Supabase</text></g>
+<g class="appear" style="animation:reveal .45s ease 0.94s both"><text x="25" y="312" font-size="12" fill="#d2ac7a" >UI</text><text x="93" y="312" font-size="12.5" fill="#e6edf3" >Tailwind CSS · Framer Motion</text></g>
+<g class="appear" style="animation:reveal .45s ease 1.03s both"><text x="25" y="337" font-size="12" fill="#d2ac7a" ></text><text x="93" y="337" font-size="12.5" fill="#e6edf3" >Three.js · Figma</text></g>
+<g class="appear" style="animation:reveal .45s ease 1.12s both"><text x="25" y="362" font-size="12" fill="#d2ac7a" >Tools</text><text x="93" y="362" font-size="12.5" fill="#e6edf3" >Git &amp; GitHub · Vite · VS Code</text></g>
+<g class="appear" style="animation:reveal .45s ease 1.40s both"><text x="25" y="410" font-size="13" fill="#7ee787" >Build the future.</text></g>
+<rect x="285" y="397" width="19" height="14" rx="2" fill="#293b2d"/>
+<rect x="307" y="397" width="19" height="14" rx="2" fill="#3c5c43"/>
+<rect x="329" y="397" width="19" height="14" rx="2" fill="#6aa577"/>
+<rect x="351" y="397" width="19" height="14" rx="2" fill="#7ee787"/>
+<rect x="373" y="397" width="19" height="14" rx="2" fill="#776351"/>
+<rect x="395" y="397" width="19" height="14" rx="2" fill="#a38666"/>
+<rect x="417" y="397" width="19" height="14" rx="2" fill="#d2ac7a"/>
+<rect x="439" y="397" width="19" height="14" rx="2" fill="#e6edf3"/>
+</svg>
