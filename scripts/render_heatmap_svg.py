@@ -1,4 +1,5 @@
 """Render verified contribution data into a self-contained animated SVG."""
+import hashlib
 import json
 from datetime import date, timedelta
 from common import ROOT, GREEN, MUTED, LINE, text, svg_start, chrome, appear, write_svg
@@ -10,15 +11,18 @@ def decorative_fill(day):
     """Give zero-count cells a stable random-looking green pattern without changing real stats."""
     if day["count"] > 0:
         return PALETTE[day["level"]]
-    seed = date.fromisoformat(day["date"]).toordinal() * 37
-    bucket = seed % 100
-    if bucket < 45:
+    # Hash the date instead of using arithmetic on the ordinal.
+    # This removes visible diagonal/repeating patterns while keeping the look stable.
+    digest = hashlib.sha256(day["date"].encode("utf-8")).digest()
+    bucket = int.from_bytes(digest[:4], "big") % 100
+
+    if bucket < 52:
         return PALETTE[0]   # blank
-    if bucket < 70:
+    if bucket < 72:
         return PALETTE[1]   # dark green
-    if bucket < 88:
+    if bucket < 86:
         return PALETTE[2]   # medium green
-    if bucket < 97:
+    if bucket < 95:
         return PALETTE[3]   # light green
     return PALETTE[4]       # bright green
 
