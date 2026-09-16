@@ -3,7 +3,7 @@ import json
 from datetime import date, timedelta
 from common import ROOT, GREEN, MUTED, LINE, text, svg_start, chrome, appear, write_svg
 
-PALETTE = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"]
+PALETTE = ["#0a2f1c", "#0e4429", "#006d32", "#26a641", "#39d353"]
 
 
 def render(data):
