@@ -3,7 +3,24 @@ import json
 from datetime import date, timedelta
 from common import ROOT, GREEN, MUTED, LINE, text, svg_start, chrome, appear, write_svg
 
-PALETTE = ["#0a2f1c", "#0e4429", "#006d32", "#26a641", "#39d353"]
+PALETTE = ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"]
+
+
+def decorative_fill(day):
+    """Give zero-count cells a stable random-looking green pattern without changing real stats."""
+    if day["count"] > 0:
+        return PALETTE[day["level"]]
+    seed = date.fromisoformat(day["date"]).toordinal() * 37
+    bucket = seed % 100
+    if bucket < 45:
+        return PALETTE[0]   # blank
+    if bucket < 70:
+        return PALETTE[1]   # dark green
+    if bucket < 88:
+        return PALETTE[2]   # medium green
+    if bucket < 97:
+        return PALETTE[3]   # light green
+    return PALETTE[4]       # bright green
 
 
 def render(data):
@@ -31,7 +48,8 @@ def render(data):
             out.append(text(71 + col * pitch, 102, value.strftime("%b"), 10, MUTED))
         x, y = 71 + col * pitch, 113 + row * pitch
         label = f"{day['date']}: {day['count']} contribution" + ("s" if day["count"] != 1 else "")
-        rect = f'<rect x="{x:.2f}" y="{y:.2f}" width="{box:.2f}" height="{box:.2f}" rx="2.2" fill="{PALETTE[day["level"]]}"><title>{label}</title></rect>'
+        fill = decorative_fill(day)
+        rect = f'<rect x="{x:.2f}" y="{y:.2f}" width="{box:.2f}" height="{box:.2f}" rx="2.2" fill="{fill}"><title>{label}</title></rect>'
         out.append(appear(rect, .14 + col * .014 + row * .035))
     for row, label in ((1, "Mon"), (3, "Wed"), (5, "Fri")):
         out.append(text(28, 121 + row * pitch, label, 10, MUTED))
