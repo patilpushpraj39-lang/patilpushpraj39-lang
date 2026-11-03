@@ -15,9 +15,6 @@ def build(profile):
         f'<p>{escape(profile["title"])} · {escape(profile["location"])}</p>',
         f'<p>{nav}</p>',
         '<br>',
-        '<h3><code>pushpraj@github ~ $ ./contributions.sh</code></h3>',
-        '<img src="./contrib-heatmap.svg" width="860" alt="Pushpraj Patil’s real contribution calendar, refreshed daily by GitHub Actions." />',
-        '<br><br>',
         '<h3><code>pushpraj@github ~ $ whoami</code></h3>',
         '<table role="presentation"><tr>',
         '<td valign="top"><img src="./pushpraj-ascii.svg" width="370" alt="Typing ASCII portrait of Pushpraj Patil, made from his existing portfolio photo." /></td>',
@@ -40,7 +37,7 @@ def build(profile):
         '<p>' + ' · '.join(f'<code>{escape(item)}</code>' for item in profile["technology"]) + '</p>',
         '</details>', '', '<br>',
         '<div align="center">', f'<p><code>{escape(profile["tagline"])}</code></p>',
-        '<sub>Profile art inspired by <a href="https://www.avivashishta.com/blog/build-animated-github-profile-readme.html">Avi Vashishta’s guide</a>. Built from my own details, portrait, and GitHub contributions.</sub>',
+        '<sub>Profile art inspired by <a href="https://www.avivashishta.com/blog/build-animated-github-profile-readme.html">Avi Vashishta’s guide</a>. Built from my own details and portrait.</sub>',
         '</div>', '',
     ]
     return "\n".join(out)
